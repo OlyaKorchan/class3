@@ -9,7 +9,7 @@
             <h1>Best Books 2015</h1>
         </header>
         <section>
-        <p> You are welcome to check the list of best books of the previous year. The results are based on survey conducted by Goodreads</p>
+        <p> You are welcome to check the list of best books of the previous year. The results are based on survey conducted by <a href="https://www.goodreads.com/">Goodreads</a></p>
         <article>
             <header><h2>Fiction</h2></header>
             <section>
@@ -64,6 +64,10 @@
                         <td><i>Trigger Warning</i> by Neil Gaiman</td>
                         <td>33,681</td>
                     </tr>
+                    <tr>
+                        <td><b>Total amount of votes</b></td>
+                        <td colspan="2"><b>170,923</b></td>
+                    </tr>
                 </table>
             </div>
         </article>
@@ -88,16 +92,18 @@
                 <p>Please leave your feedback about this article below:</p>
                 <form id="feedback" method="post">
                     <fieldset>
-                        <legend><b>Your Feedback</b></legend>
-                        <label for="name">Name: </label>
+                        <legend><b>Feedback</b></legend>
+                        <label for="name">Name*</label> <br>
                         <input type="text" id="name" placeholder="Name" required>
                         <br> <br>
-                        <label for="email">Email: </label>
+                        <label for="email">Email*</label> <br>
                         <input type="email" id="email" placeholder="Email address" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-zA-Z]{2,}$">
                         <br> <br>
-                        <textarea name="comments" rows="10" cols="30" placeholder="Your feedback" required></textarea>
-                        <br><br>
+                        <label for="comments">Your feedback*</label><br>
+                        <textarea name="comments" id="comments" rows="10" cols="30" placeholder="Your feedback" required></textarea>
+                        <br> <br>
                         <input type="submit" value="Send my feedback">
+                        <p><small><i>*This field is required</i></small></p>
                     </fieldset>
                 </form>
             </div>
